@@ -1,0 +1,36 @@
+<form #userForm ="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+    <div class="form-group">
+        <label>Student Name</label>
+        <input id="name" type="text" class="form-control" name="name" ngModel>
+    </div>
+
+    <div class="form-group">
+        <label>Student Address</label>
+        <textarea id = "comment" cols="30" rows="5"  name="address" class="form-control" ngModel></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Student Address</label><br>
+      <label><input type="radio" name="gender" ngModel> Male</label>
+      <label><input type="radio" name="gender" ngModel> Female</label>
+    </div>
+
+    <div class="form-group">
+        <label>Student Mobile Number</label>
+        <input id="name" type="text" name="mobile" class="form-control" ngModel>
+    </div>
+
+    <div class="form-group">
+        <label>Student College Name</label>
+        <input id="name" type="text" name="college" class="form-control" ngModel>
+    </div>
+
+    <div class="form-group">
+        <label>Student Email ID</label>
+        <input id="name" type="text" name="email" class="form-control" ngModel>
+    </div>
+
+    <div>
+      <button class="btn btn-primary">Submit</button>
+    </div>
+</form>
